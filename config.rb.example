@@ -1,0 +1,6 @@
+{
+  repos_path: '/path/to/git/repositories',
+  repos: [
+    {uri: 'git@git.example.org:namespace/reponame.git', push: ['--mirror', 'git@github.com:example/reponame.git']},
+  ]
+}
