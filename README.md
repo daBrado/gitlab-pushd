@@ -26,7 +26,7 @@ Given that GitLab just talks JSON, if you want to trigger the `pushd` daemon dir
 
     #!/bin/sh
     repouri=git@git.example.org:myrepo.git
-    pulld=http://git.example.org:29224
-    curl --data '{"repository":{"url":"'$repouri'"}}' $pulld
+    pushd=http://git.example.org:29224
+    curl --data '{"repository":{"url":"'$repouri'"}}' $pushd
 
 The `repouri` only needs to match whatever you listed in the `config.rb` file, i.e. just some unique identifier of your choosing.
